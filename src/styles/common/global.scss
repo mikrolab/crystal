@@ -56,11 +56,13 @@ a {
 }
 
 .visible {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .hide {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .allocate{

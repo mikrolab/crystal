@@ -117,6 +117,7 @@
   border-top: 1px solid #AADBF6;
   width: 3.7rem;
   margin-right: 5px;
+  transition: 1.5s;
 
   &.active {
     width: 7.9rem;
@@ -144,15 +145,30 @@
   letter-spacing: 0.2em;
   margin-left: 3.7rem;
   margin-top: 2.4rem;
+  transition: 1.5s;
+
+  &.infrastructure {
+    display: none;
+  }
+
+  &.specifications {
+    display: none;
+  }
 }
 
 .about__illustration-item {
   background: #edf9ff;
+  transition: 3s;
 
   &.infrastructure {
     background: transparent;
     position: relative;
     margin-top: 3.8rem;
+    display: none;
+  }
+
+  &.specifications {
+    display: none;
   }
 }
 
@@ -188,6 +204,10 @@
   padding-top: 6rem;
   opacity: .92;
   padding-bottom: 2rem;
+}
+
+.map__filter {
+  transition: 2s;
 }
 
 .zoom__btn {
@@ -375,12 +395,18 @@
 .aesthetics__slider {
   display: block;
   position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: 3s;
 
   &.terraces,
   &.lobby,
   &.interiors,
   &.landscaping {
     display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
   }
 }
 
@@ -644,6 +670,9 @@
   position: relative;
   width: 90%;
   margin: 0 auto;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s;
 
   &.two-room,
   &.three-room,
@@ -651,6 +680,8 @@
   &.parking,
   &.commercial {
     display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -745,6 +776,7 @@
 
 .purchase__methods {
   padding-top: 4rem;
+  max-width: 55%;
 }
 
 .purchase__form {

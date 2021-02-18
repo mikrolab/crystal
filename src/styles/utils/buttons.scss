@@ -76,6 +76,12 @@
   }
 }
 
+.presentation-btn {
+  &:hover {
+    box-shadow: 5px 5px 9px 6px rgba(26, 64, 115, 0.21);
+  }
+}
+
 .filter__btn {
   position: absolute;
   top: -10%;

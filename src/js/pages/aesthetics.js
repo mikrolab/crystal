@@ -14,12 +14,25 @@
     document.querySelectorAll(`.aesthetics__menu-btn.` + activeBlock + ``)[0].classList.add(`active`);
     document.querySelectorAll(`.aesthetics__slider.` + activeBlock + ``)[0].style.display = "block";
     $('.aesthetics__slider.' + activeBlock + ``).slick(`refresh`).slick(`slickPlay`);
+    setTimeout(function(){
+      document.querySelectorAll(`.aesthetics__slider.` + activeBlock + ``)[0].style.visibility = "visible";
+      document.querySelectorAll(`.aesthetics__slider.` + activeBlock + ``)[0].style.opacity = "1";
+    }, 1)
     document.querySelectorAll(`.aesthetics__menu-btn.` + disabledBlock1 + ``)[0].classList.remove(`active`);
     document.querySelectorAll(`.aesthetics__slider.` + disabledBlock1 + ``)[0].style.display = "none";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock1 + ``)[0].style.visibility = "hidden";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock1 + ``)[0].style.opacity = "0";
+    $('.aesthetics__slider.' + disabledBlock1 + ``).slick(`slickPause`);
     document.querySelectorAll(`.aesthetics__menu-btn.` + disabledBlock2 + ``)[0].classList.remove(`active`);
     document.querySelectorAll(`.aesthetics__slider.` + disabledBlock2 + ``)[0].style.display = "none";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock2 + ``)[0].style.visibility = "hidden";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock2 + ``)[0].style.opacity = "0";
+    $('.aesthetics__slider.' + disabledBlock2 + ``).slick(`slickPause`);
     document.querySelectorAll(`.aesthetics__menu-btn.` + disabledBlock3 + ``)[0].classList.remove(`active`);
     document.querySelectorAll(`.aesthetics__slider.` + disabledBlock3 + ``)[0].style.display = "none";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock3 + ``)[0].style.visibility = "hidden";
+    document.querySelectorAll(`.aesthetics__slider.` + disabledBlock3 + ``)[0].style.opacity = "0";
+    $('.aesthetics__slider.' + disabledBlock3 + ``).slick(`slickPause`);
   }
 
   self.aesthetics = () => {
