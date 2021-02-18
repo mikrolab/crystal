@@ -1,0 +1,135 @@
+.residence__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: .32rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1a4073;
+  padding: .25rem 1.66rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+
+  &.camera {
+    margin: 2rem 0;
+  }
+}
+
+.tab-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: .16rem;
+  text-transform: lowercase;
+  color: #1a4073;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #00c0e8;
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  outline: none;
+  cursor: pointer;
+
+  &.active {
+    font-weight: 700;
+    letter-spacing: .125rem;
+  }
+
+  &:hover {
+    font-weight: 700;
+    letter-spacing: .125rem;
+  }
+}
+
+.purchase-btn {
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  color: #1A4073;
+  border: none;
+  border-bottom: 1px solid #1A4073;
+  padding: 0.7rem 0;
+  width: 65%;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+  display: block;
+
+  &.active {
+    color: #EDF9FF;
+    background: #1A4073;
+  }
+
+  &:hover {
+    color: #EDF9FF;
+    background: #1A4073;
+  }
+}
+
+.filter__btn {
+  position: absolute;
+  top: -10%;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.32rem;
+  text-transform: uppercase;
+  color: #1A4073;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+
+  span {
+    border-bottom: 3px solid #00c0e8;
+  }
+
+  &.active {
+
+    img {
+      margin-left: 1rem;
+      display: none;
+
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  img {
+    margin-left: 1rem;
+
+    &:first-child {
+      display: block;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .residence__button {
+    font-size: 12px;
+    padding: 1.25rem 2.66rem;
+    margin: 0 auto;
+    line-height: 2.2rem;
+  }
+}
