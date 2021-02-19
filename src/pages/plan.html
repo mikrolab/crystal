@@ -29,6 +29,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
     rel="stylesheet">
@@ -40,7 +41,8 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header class="header">
-    <div class="header__mob">
+    <div class="header__mob" data-aos="fade-down" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+    data-aos-duration="800">
       <div class="header__mob-top">
         <a href="tel:0672151682" class="phoneMobImg"><img src="img/phone__mob.svg" alt="" class="phone__mob"> </a>
         <a href="./"><img src="img/logo__mob.svg" alt="" class="img/logo__mob.svg"></a>
@@ -51,7 +53,8 @@
       </div>
     </div>
     <div class="startscreen__container">
-      <div class="header__wrapper">
+      <div class="header__wrapper" data-aos="fade-down" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+      data-aos-duration="800">
         <a href="./" class="header__wrapper-logo"><img src="img/logo.png" alt=""></a>
         <div class="header__wrapper-navbar">
           <a class="header__wrapper-phone" href="tel:0672151682"><span class="allocate header__wrapper-num">(067) 215 16 82
@@ -192,7 +195,8 @@
   </main>
 
 
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+  data-aos-duration="800">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__wrapper-logo">
@@ -244,6 +248,14 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src='js/main.min.js'></script>
+<script>
+  AOS.init();
+$(window).on("scroll", function () {
+     AOS.init();
+ });
+
+</script>
 
 </html>

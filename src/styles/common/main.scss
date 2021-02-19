@@ -29,6 +29,8 @@
   letter-spacing: .3rem;
   text-transform: uppercase;
   color: #1a4073;
+  // animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  // animation-duration: 2s;
 }
 
 .startscreen__information-geolocation {
@@ -627,7 +629,7 @@
 // apartment
 
 .apartment {
-  margin-top: 8rem;
+  padding-top: 8rem;
 
   .residence__button {
     margin: 2rem auto;
@@ -729,7 +731,7 @@
 // presentation
 
 .presentation {
-  margin-top: 10rem;
+  padding-top: 10rem;
   background: url(../img/presentation__background1.png), url(../img/presentation__background2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -830,7 +832,7 @@
 // construction
 
 .construction {
-  margin-top: 8rem;
+  padding-top: 8rem;
   position: relative;
 
   .section__title {
@@ -1115,7 +1117,7 @@
 // development
 
 .development {
-  margin-top: 16rem;
+  padding-top: 16rem;
 
   .section__text {
     margin-top: 1.8rem;
@@ -2384,7 +2386,7 @@
   // development
 
   .development {
-    margin-top: 21rem;
+    padding-top: 21rem;
   }
 
   // reliability

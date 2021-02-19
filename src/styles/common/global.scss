@@ -8,6 +8,11 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  overflow: hidden;
 }
 
 html,
@@ -46,6 +51,8 @@ a {
   text-transform: uppercase;
   color: #1a4073;
   line-height: 2.65rem;
+  // animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  // animation-duration: 2s;
 }
 
 .section__text {

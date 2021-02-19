@@ -18,6 +18,10 @@
   &.camera {
     margin: 2rem 0;
   }
+
+  &:hover {
+    box-shadow: 5px 5px 9px 6px rgba(26, 64, 115, 0.21);
+  }
 }
 
 .tab-btn {
@@ -76,11 +80,7 @@
   }
 }
 
-.presentation-btn {
-  &:hover {
-    box-shadow: 5px 5px 9px 6px rgba(26, 64, 115, 0.21);
-  }
-}
+.presentation-btn {}
 
 .filter__btn {
   position: absolute;
