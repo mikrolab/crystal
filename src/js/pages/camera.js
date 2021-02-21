@@ -44,23 +44,23 @@
       yearList.addEventListener(`click`, (event) => {
         yearList.style.display = "none";
         year = (event.target).innerText;
-        if (year == 2021) {
-          document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
-          document.querySelectorAll(`.video__text`)[0].innerHTML = `
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 3 секції ЖК CRYSTAL RESIDENCE  ведеться цегляна кладка стін на 8 і 9 поверсі та йде армування плити 16 поверху.</p></div>
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 4 секцiї закінчується бетонування вертикальних конструкцій 16 поверху.</p></div>
-          <a href="" class="video__details">
-          <button class="tab-btn">
-          дізнатися більше
-          </button>
-          <img src="img/arrow.png" alt="">
-        </a>`;
-          yearBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> 2021`;
-          monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> січень`;
-          monthList.innerHTML = `
-          <li><img src="img/listArrow2.svg" alt=""> Лютий</li>
-          <li><img src="img/listArrow2.svg" alt=""> Січень</li>`;
-        }
+        // if (year == 2021) {
+        //   document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
+        //   document.querySelectorAll(`.video__text`)[0].innerHTML = `
+        //   <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 3 секції ЖК CRYSTAL RESIDENCE  ведеться цегляна кладка стін на 8 і 9 поверсі та йде армування плити 16 поверху.</p></div>
+        //   <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 4 секцiї закінчується бетонування вертикальних конструкцій 16 поверху.</p></div>
+        //   <a href="" class="video__details">
+        //   <button class="tab-btn">
+        //   дізнатися більше
+        //   </button>
+        //   <img src="img/arrow.png" alt="">
+        // </a>`;
+        //   yearBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> 2021`;
+        //   monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> січень`;
+        //   monthList.innerHTML = `
+        //   <li><img src="img/listArrow2.svg" alt=""> Лютий</li>
+        //   <li><img src="img/listArrow2.svg" alt=""> Січень</li>`;
+        // }
         if (year == 2020) {
           document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
           document.querySelectorAll(`.video__text`)[0].innerHTML = `
@@ -92,34 +92,34 @@
         monthList.style.display = "none";
         let selmonth = (event.target).innerText;
         monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> ` + selmonth + ``;
-        if (year == 2021) {
-          switch (selmonth) {
-            case ` Лютий`:
-              document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/QXepTD0rGkc?controls=0`);
-              document.querySelectorAll(`.video__text`)[0].innerHTML = `<div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Влаштування котловану під будівництво</p></div>
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій щебеневої підготовки під ростверк будівлі товщиною 600 мм</p></div>
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій свайно-гвинтового фундаменту за технологією</p></div>
-              <a href="" class="video__details">
-              <button class="tab-btn">
-              дізнатися більше
-              </button>
-              <img src="img/arrow.png" alt="">
-            </a>`;
-              break;
-            case ` Січень`:
-              document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
-              document.querySelectorAll(`.video__text`)[0].innerHTML = `
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 3 секції ЖК CRYSTAL RESIDENCE  ведеться цегляна кладка стін на 8 і 9 поверсі та йде армування плити 16 поверху.</p></div>
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 4 секцiї закінчується бетонування вертикальних конструкцій 16 поверху.</p></div>
-              <a href="" class="video__details">
-              <button class="tab-btn">
-              дізнатися більше
-              </button>
-              <img src="img/arrow.png" alt="">
-            </a>`;
-              break;
-          }
-        }
+        // if (year == 2021) {
+        //   switch (selmonth) {
+        //     case ` Лютий`:
+        //       document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/QXepTD0rGkc?controls=0`);
+        //       document.querySelectorAll(`.video__text`)[0].innerHTML = `<div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Влаштування котловану під будівництво</p></div>
+        //       <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій щебеневої підготовки під ростверк будівлі товщиною 600 мм</p></div>
+        //       <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій свайно-гвинтового фундаменту за технологією</p></div>
+        //       <a href="" class="video__details">
+        //       <button class="tab-btn">
+        //       дізнатися більше
+        //       </button>
+        //       <img src="img/arrow.png" alt="">
+        //     </a>`;
+        //       break;
+        //     case ` Січень`:
+        //       document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
+        //       document.querySelectorAll(`.video__text`)[0].innerHTML = `
+        //       <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 3 секції ЖК CRYSTAL RESIDENCE  ведеться цегляна кладка стін на 8 і 9 поверсі та йде армування плити 16 поверху.</p></div>
+        //       <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 4 секцiї закінчується бетонування вертикальних конструкцій 16 поверху.</p></div>
+        //       <a href="" class="video__details">
+        //       <button class="tab-btn">
+        //       дізнатися більше
+        //       </button>
+        //       <img src="img/arrow.png" alt="">
+        //     </a>`;
+        //       break;
+        //   }
+        // }
         if (year == 2020) {
           switch (selmonth) {
             case ` Грудень`:
