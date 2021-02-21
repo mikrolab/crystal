@@ -42,7 +42,7 @@
   <!-- End Google Tag Manager (noscript) -->
   <header class="header">
     <div class="header__mob" data-aos="fade-down" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-    data-aos-duration="800">
+      data-aos-duration="800">
       <div class="header__mob-top">
         <a href="tel:0672151682" class="phoneMobImg"><img src="img/phone__mob.svg" alt="" class="phone__mob"> </a>
         <a href="./"><img src="img/logo__mob.svg" alt="" class="img/logo__mob.svg"></a>
@@ -54,7 +54,7 @@
     </div>
     <div class="startscreen__container">
       <div class="header__wrapper" data-aos="fade-down" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-      data-aos-duration="800">
+        data-aos-duration="800">
         <a href="./" class="header__wrapper-logo"><img src="img/logo.png" alt=""></a>
         <div class="header__wrapper-navbar">
           <a class="header__wrapper-phone" href="tel:0672151682"><span class="allocate header__wrapper-num">(067) 215 16
@@ -90,7 +90,7 @@
     <section class="startscreen">
       <div class="startscreen__container">
         <div class="startscreen__information" data-aos="fade-right" data-aos-once="false"
-        data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
           <h1 class="startscreen__information-title">
             Квартири</br> <span class="allocate">бізнес-класу</br>у самому центрі</span> Києва
           </h1>
@@ -102,7 +102,7 @@
             <button class="residence__button startscreen-btn" id="review__btn">
               записатися на консультацію
             </button>
-            <a href="" class="startscreen__panorama">
+            <a href="#" class="startscreen__panorama" id="openPanorama">
               <button class="tab-btn">
                 панорами 360
               </button>
@@ -110,6 +110,15 @@
             </a>
           </div>
         </div>
+      </div>
+      <div class="panorama__popup">
+        <div class="panorama__popup-close">
+          <a href="#" class="close__button" id="closePanorama"><img src="img/close.svg" alt="close"></a>
+        </div>
+        <iframe class="" width="560" height="315" src="https://3dtour.ua/tours/2020/zhk_crystal_avenue/" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
 
@@ -946,16 +955,17 @@
               </p>
             </div>
           </div>
-          <div class="purchase__form" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          <form class="purchase__form contact__form" data-aos="fade-left" data-aos-once="false"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="800">
             <h2 class="section__title">Заповніть форму
               зворотнього зв'язку
             </h2>
             <p class="section__text">Наш менеджер зв'яжеться з Вами протягом 30 хвилин і допоможе у подборі
               найвигіднішого варіанту</p>
-            <input type="text" class="residence__input" placeholder="Ваше ім'я">
-            <input type="text" class="residence__input" placeholder="Ваш телефон">
-            <button class="residence__button">отримати консультацію</button>
-          </div>
+            <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
+            <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>
+            <button type="submit" class="residence__button">отримати консультацію</button>
+          </form>
         </div>
       </div>
     </section>
@@ -983,8 +993,8 @@
             </ul>
           </div>
         </div>
-        <div class="construction__wrapper" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-        data-aos-duration="800">
+        <div class="construction__wrapper" data-aos="fade-up" data-aos-once="false"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
           <div class="construction__wrapper-info">
             <div class="video video-btn">
               <h3 class="video__title">Проведені роботи</h3>
@@ -1080,9 +1090,9 @@
     <section class="reliability" id="reliability">
       <div class="container">
         <h2 class="section__title" data-aos="fade-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-        data-aos-duration="800">Переконайтеся у надійності будівництва</h2>
-        <div class="reliability__wrapper" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-        data-aos-duration="800">
+          data-aos-duration="800">Переконайтеся у надійності будівництва</h2>
+        <div class="reliability__wrapper" data-aos="fade-up" data-aos-once="false"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
           <div class="reliability__wrapper-item">
             <img src="img/reliability__logo.png" alt="" class="reliability__logo">
             <p class="section__text">Державний Акт про право власності на земельну ділянку</p>
@@ -1117,25 +1127,25 @@
     <section class="question">
       <div class="container">
         <h2 class="section__title" data-aos="fade-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-        data-aos-duration="800">Бажаєте дізнатися більше?</h2>
+          data-aos-duration="800">Бажаєте дізнатися більше?</h2>
       </div>
       <div class="question__wrapper" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-      data-aos-duration="800">
-        <img src="img/businesswoman.jpg" alt="" class="businesswoman-img" data-aos="flip-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
         data-aos-duration="800">
+        <img src="img/businesswoman.jpg" alt="" class="businesswoman-img" data-aos="flip-right" data-aos-once="false"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
         <div class="question__info">
           <p class="section__text">
             Поставте свої питання керівнику відділу продажів компанії
             Строй Сіті Кепітал Валерії</p>
-          <img src="img/businesswoman__mob.jpg" alt="" class="businesswoman__mob" data-aos="flip-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-          data-aos-duration="800">
-          <div class="question__form">
-            <input type="text" class="residence__input" placeholder="Ваше ім'я">
-            <input type="text" class="residence__input" placeholder="Ваш телефон">
-            <textarea name="" id="" cols="30" rows="7" class="residence__input"
+          <img src="img/businesswoman__mob.jpg" alt="" class="businesswoman__mob" data-aos="flip-right"
+            data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          <form class="question__form contact__form">
+            <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
+            <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>
+            <textarea name="message" id="" cols="30" rows="7" class="residence__input"
               placeholder="Напишіть ваше питання"></textarea>
-            <button class="residence__button">поставити питання</button>
-          </div>
+            <button type="submit" class="residence__button">поставити питання</button>
+          </form>
         </div>
       </div>
     </section>
@@ -1144,15 +1154,15 @@
       <div class="container">
         <div class="contact__wrapper">
           <div class="contact__item" data-aos="fade-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-          data-aos-duration="800">
+            data-aos-duration="800">
             <h3 class="contact__title">дзвоніть</h3>
             <p class="contact__text"><a href="tel:0672151682">(067) 215 16 82</a></p>
             <button class="residence__button" id="contact__call">Перездвонити мені</button>
           </div>
-          <img src="img/logo.png" alt="" class="contact__logo" data-aos="fade-down" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-          data-aos-duration="800">
+          <img src="img/logo.png" alt="" class="contact__logo" data-aos="fade-down" data-aos-once="false"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="800">
           <div class="contact__item" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-          data-aos-duration="800">
+            data-aos-duration="800">
             <h3 class="contact__title">Приїздіть</h3>
             <p class="contact__text">
               Київ,</br>
@@ -1168,7 +1178,7 @@
 
 
   <footer class="footer" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom"
-  data-aos-duration="800">
+    data-aos-duration="800">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__wrapper-logo">
@@ -1202,7 +1212,7 @@
     </div>
   </footer>
   <div class="popup__wrapper">
-    <div class="popup">
+    <form class="popup contact__form">
       <h2 class="section__title">Залиште свої контакти</h2>
       <a class="close__button" id="closePopup"><img src="img/close.svg" alt="close"></a>
       <p class="section__text">
@@ -1210,9 +1220,16 @@
         з Вами протягом
         30 хвилин та відповість
         на усі питання</p>
-      <input type="text" class="residence__input" placeholder="Ваше ім'я">
-      <input type="text" class="residence__input" placeholder="Ваш телефон">
-      <button class="residence__button">відправити заявку</button>
+      <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
+      <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>
+      <button type="submit" class="residence__button">відправити заявку</button>
+    </form>
+  </div>
+  <div class="successfully__sent-wrapper">
+    <div class="successfully__sent-form">
+      <a class="close__button" id="closConfirmation"><img src="img/close.svg" alt="close"></a>
+      <h2 class="section__title">Заявка успішно відправлена!</h2>
+      <p class="section__text">Очікуйте зв'язку із менеджером</p>
     </div>
   </div>
   <div id="topBtn"></div>
@@ -1225,9 +1242,9 @@
 
 <script>
   AOS.init();
-$(window).on("scroll", function () {
-     AOS.init();
- });
+  $(window).on("scroll", function () {
+    AOS.init();
+  });
 
 </script>
 

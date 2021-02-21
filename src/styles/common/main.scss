@@ -57,6 +57,21 @@
   }
 }
 
+.panorama__popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 // about
 
 .about {
@@ -718,9 +733,9 @@
   }
 }
 
-.three-room{
-  .apartment__content-illustration{
-    img{
+.three-room {
+  .apartment__content-illustration {
+    img {
       max-height: 45rem;
     }
   }
@@ -1858,9 +1873,9 @@
     margin: 3rem 2.5em;
   }
 
-  .three-room{
-    .apartment__content-illustration{
-      img{
+  .three-room {
+    .apartment__content-illustration {
+      img {
         max-height: 65rem;
       }
     }

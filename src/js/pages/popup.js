@@ -7,6 +7,7 @@
   const reviewBtn = document.getElementById(`review__btn`);
   const planBtn = document.getElementById(`plan__btn`);
   const closeBtn = document.getElementById(`closePopup`);
+  const closConfirmation = document.getElementById(`closConfirmation`);
   // Events
 
   // Methods
@@ -20,6 +21,11 @@
     document.querySelectorAll(`.popup__wrapper`)[0].style.opacity = "0"
     document.querySelectorAll(`html`)[0].style.overflow = "auto";
   }
+  self.closeConfirmationForm = () => {
+    document.querySelectorAll(`.successfully__sent-wrapper`)[0].style.visibility = "hidden"
+    document.querySelectorAll(`.successfully__sent-wrapper`)[0].style.opacity = "0"
+    document.querySelectorAll(`html`)[0].style.overflow = "auto";
+  }
   self.popup = () => {
 
     if (pageName == `plan.html`) {
@@ -28,6 +34,9 @@
       })
       closeBtn.addEventListener(`click`, () => {
         self.closePopup()
+      })
+      closConfirmation.addEventListener(`click`, () => {
+        self.closeConfirmationForm()
       })
     }
     if(pageName == ``){
@@ -40,6 +49,9 @@
       closeBtn.addEventListener(`click`, () => {
         self.closePopup()
       })
+      closConfirmation.addEventListener(`click`, () => {
+        self.closeConfirmationForm()
+      })
     }
     if(pageName == `contacts.html`){
       contactBtn.addEventListener(`click`, () => {
@@ -47,6 +59,9 @@
       })
       closeBtn.addEventListener(`click`, () => {
         self.closePopup()
+      })
+      closConfirmation.addEventListener(`click`, () => {
+        self.closeConfirmationForm()
       })
     }
 

@@ -10,6 +10,8 @@ require(`./pages/camera.js`);
 require(`./pages/popup.js`);
 require(`./pages/apartmentSlider.js`);
 require(`./pages/topArrow.js`);
+require(`./pages/panorama.js`);
+require(`./pages/formSubmitting.js`);
 
 (function () {
   const self = window.controllerMain || {};
