@@ -62,21 +62,19 @@
         //   <li><img src="img/listArrow2.svg" alt=""> Січень</li>`;
         // }
         if (year == 2020) {
-          document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
+          document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/kWc3JTdp6mQ?controls=0`);
           document.querySelectorAll(`.video__text`)[0].innerHTML = `
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Викладається з цегли вентиляційні шахти в 1 секцiї.</p></div>
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Встановлюється монолітне перекриття над машинним відділенням 2 секцiї.</p></div>
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Виконується цегляна кладка стін та перегородок 3 та 4 секцiї.</p></div>
+          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">На будівельному майданчику ЖК CRYSTAL RESIDENCE замонолічена плита перекриття 4-ої секції, 13-го поверху.</p></div>
+          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Виконано пристрій вертикальних елементів 4 секції, 14-го поверху</p></div>
           <a href="" class="video__details">
           <button class="tab-btn">
           дізнатися більше
           </button>
           <img src="img/arrow.png" alt="">
-        </a`;
+        </a>`;
           yearBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> 2020`;
-          monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> грудень`
+          monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> листопад`
           monthList.innerHTML = `
-          <li><img src="img/listArrow2.svg" alt=""> Грудень</li>
           <li><img src="img/listArrow2.svg" alt=""> Листопад</li>
           <li><img src="img/listArrow2.svg" alt=""> Жовтень</li>
           <li><img src="img/listArrow2.svg" alt=""> Вересень</li>
@@ -122,19 +120,19 @@
         // }
         if (year == 2020) {
           switch (selmonth) {
-            case ` Грудень`:
-              document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
-              document.querySelectorAll(`.video__text`)[0].innerHTML = `
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Викладається з цегли вентиляційні шахти в 1 секцiї.</p></div>
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Встановлюється монолітне перекриття над машинним відділенням 2 секцiї.</p></div>
-              <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Виконується цегляна кладка стін та перегородок 3 та 4 секцiї.</p></div>
-              <a href="" class="video__details">
-              <button class="tab-btn">
-              дізнатися більше
-              </button>
-              <img src="img/arrow.png" alt="">
-            </a>`;
-              break;
+            // case ` Грудень`:
+            //   document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
+            //   document.querySelectorAll(`.video__text`)[0].innerHTML = `
+            //   <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Викладається з цегли вентиляційні шахти в 1 секцiї.</p></div>
+            //   <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Встановлюється монолітне перекриття над машинним відділенням 2 секцiї.</p></div>
+            //   <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Виконується цегляна кладка стін та перегородок 3 та 4 секцiї.</p></div>
+            //   <a href="" class="video__details">
+            //   <button class="tab-btn">
+            //   дізнатися більше
+            //   </button>
+            //   <img src="img/arrow.png" alt="">
+            // </a>`;
+            //   break;
             case ` Листопад`:
               document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/kWc3JTdp6mQ?controls=0`);
               document.querySelectorAll(`.video__text`)[0].innerHTML = `
