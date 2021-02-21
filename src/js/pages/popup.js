@@ -32,6 +32,9 @@
       planBtn.addEventListener(`click`, () => {
         self.openPopup()
       })
+      contactBtn.addEventListener(`click`, () => {
+        self.openPopup();
+      })
       closeBtn.addEventListener(`click`, () => {
         self.closePopup()
       })

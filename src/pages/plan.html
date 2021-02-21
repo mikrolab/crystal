@@ -151,22 +151,26 @@
 
     <section class="question">
       <div class="container">
-        <h2 class="section__title">Бажаєте дізнатися більше?</h2>
+        <h2 class="section__title" data-aos="fade-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="800">Бажаєте дізнатися більше?</h2>
       </div>
-      <div class="question__wrapper">
-        <img src="img/businesswoman.jpg" alt="" class="businesswoman-img">
+      <div class="question__wrapper" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+        data-aos-duration="800">
+        <img src="img/businesswoman.jpg" alt="" class="businesswoman-img" data-aos="flip-right" data-aos-once="false"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
         <div class="question__info">
           <p class="section__text">
             Поставте свої питання керівнику відділу продажів компанії
             Строй Сіті Кепітал Валерії</p>
-          <img src="img/businesswoman__mob.jpg" alt="" class="businesswoman__mob">
-          <div class="question__form">
-            <input type="text" class="residence__input" placeholder="Ваше ім'я">
-            <input type="text" class="residence__input" placeholder="Ваш телефон">
-            <textarea name="" id="" cols="30" rows="7" class="residence__input"
+          <img src="img/businesswoman__mob.jpg" alt="" class="businesswoman__mob" data-aos="flip-right"
+            data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          <form class="question__form contact__form">
+            <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
+            <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>
+            <textarea name="message" id="" cols="30" rows="7" class="residence__input"
               placeholder="Напишіть ваше питання"></textarea>
-            <button class="residence__button">поставити питання</button>
-          </div>
+            <button type="submit" class="residence__button">поставити питання</button>
+          </form>
         </div>
       </div>
     </section>
@@ -174,13 +178,16 @@
     <section class="contact">
       <div class="container">
         <div class="contact__wrapper">
-          <div class="contact__item">
+          <div class="contact__item" data-aos="fade-right" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800">
             <h3 class="contact__title">дзвоніть</h3>
             <p class="contact__text"><a href="tel:0672151682">(067) 215 16 82</a></p>
             <button class="residence__button" id="contact__call">Перездвонити мені</button>
           </div>
-          <img src="img/logo.png" alt="" class="contact__logo">
-          <div class="contact__item">
+          <img src="img/logo.png" alt="" class="contact__logo" data-aos="fade-down" data-aos-once="false"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          <div class="contact__item" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800">
             <h3 class="contact__title">Приїздіть</h3>
             <p class="contact__text">
               Київ,</br>
@@ -230,7 +237,7 @@
     </div>
   </footer>
   <div class="popup__wrapper">
-    <div class="popup">
+    <form class="popup contact__form">
       <h2 class="section__title">Залиште свої контакти</h2>
       <a class="close__button" id="closePopup"><img src="img/close.svg" alt="close"></a>
       <p class="section__text">
@@ -238,9 +245,16 @@
         з Вами протягом
         30 хвилин та відповість
         на усі питання</p>
-      <input type="text" class="residence__input" placeholder="Ваше ім'я">
-      <input type="text" class="residence__input" placeholder="Ваш телефон">
-      <button class="residence__button">відправити заявку</button>
+      <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
+      <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>
+      <button type="submit" class="residence__button">відправити заявку</button>
+    </form>
+  </div>
+  <div class="successfully__sent-wrapper">
+    <div class="successfully__sent-form">
+      <a class="close__button" id="closConfirmation"><img src="img/close.svg" alt="close"></a>
+      <h2 class="section__title">Заявка успішно відправлена!</h2>
+      <p class="section__text">Очікуйте зв'язку із менеджером</p>
     </div>
   </div>
   <div id="topBtn"></div>
