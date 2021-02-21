@@ -7,6 +7,7 @@ $(document).ready(function () {
       slidesToShow: 2,
       infinite: true,
       slidesToScroll: 1,
+      infinite: false,
       responsive: [
         {
           breakpoint: 770,

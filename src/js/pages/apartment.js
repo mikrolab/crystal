@@ -8,7 +8,7 @@
   const threeR = document.getElementById(`three-room`);
   const twoL = document.getElementById(`two-level`);
   const parking = document.getElementById(`parking`);
-  const commercial = document.getElementById(`commercial`);
+  // const commercial = document.getElementById(`commercial`);
   // Events
 
   // Methods
@@ -36,38 +36,38 @@
     document.querySelectorAll(`.apartment__content-plan.` + disabledBlock4 + ``)[0].style.display = "none";
     document.querySelectorAll(`.apartment__content-plan.` + disabledBlock4 + ``)[0].style.visibility = "hidden";
     document.querySelectorAll(`.apartment__content-plan.` + disabledBlock4 + ``)[0].style.opacity = "0";
-    document.querySelectorAll(`.apartment__content-btn.` + disabledBlock5 + ``)[0].classList.remove(`active`);
-    document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.display = "none";
-    document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.visibility = "hidden";
-    document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.opacity = "0";
+    // document.querySelectorAll(`.apartment__content-btn.` + disabledBlock5 + ``)[0].classList.remove(`active`);
+    // document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.display = "none";
+    // document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.visibility = "hidden";
+    // document.querySelectorAll(`.apartment__content-plan.` + disabledBlock5 + ``)[0].style.opacity = "0";
   }
 
   self.apartment = () => {
     oneR.addEventListener(`click`, () => {
-      self.changeApartment(`one-room`, `two-room`, `three-room`, `two-level`, `parking`, `commercial`);
+      self.changeApartment(`one-room`, `two-room`, `three-room`, `two-level`, `parking`);
       $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
     })
     twoR.addEventListener(`click`, () => {
-      self.changeApartment(`two-room`, `one-room`, `three-room`, `two-level`, `parking`, `commercial`);
+      self.changeApartment(`two-room`, `one-room`, `three-room`, `two-level`, `parking`);
       $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,1);
       $('.apartment__content-plan.two-room').slick(`setPosition`);
     })
     threeR.addEventListener(`click`, () => {
-      self.changeApartment(`three-room`, `two-room`, `one-room`, `two-level`, `parking`, `commercial`);
+      self.changeApartment(`three-room`, `two-room`, `one-room`, `two-level`, `parking`);
       $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
     })
     twoL.addEventListener(`click`, () => {
-      self.changeApartment(`two-level`, `two-room`, `three-room`, `one-room`, `parking`, `commercial`);
+      self.changeApartment(`two-level`, `two-room`, `three-room`, `one-room`, `parking`);
       $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
     })
     parking.addEventListener(`click`, () => {
-      self.changeApartment(`parking`, `two-room`, `three-room`, `one-room`, `two-level`, `commercial`);
+      self.changeApartment(`parking`, `two-room`, `three-room`, `one-room`, `two-level`);
       $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
     })
-    commercial.addEventListener(`click`, () => {
-      self.changeApartment(`commercial`, `two-room`, `three-room`, `one-room`, `parking`, `two-level`);
-      $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
-    })
+    // commercial.addEventListener(`click`, () => {
+    //   self.changeApartment(`commercial`, `two-room`, `three-room`, `one-room`, `parking`, `two-level`);
+    //   $('.apartment__content-plan.two-room').slick(`slickSetOption`,`slidesToShow`,2);
+    // })
   }
 
   const onDocumentReady = () => {

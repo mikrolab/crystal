@@ -45,10 +45,10 @@
         yearList.style.display = "none";
         year = (event.target).innerText;
         if (year == 2021) {
-          document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/QXepTD0rGkc?controls=0`);
-          document.querySelectorAll(`.video__text`)[0].innerHTML = `<div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Влаштування котловану під будівництво</p></div>
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій щебеневої підготовки під ростверк будівлі товщиною 600 мм</p></div>
-          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">Пристрій свайно-гвинтового фундаменту за технологією</p></div>
+          document.querySelectorAll(`.videofile.video-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/0tI0769Z_iE?controls=0`);
+          document.querySelectorAll(`.video__text`)[0].innerHTML = `
+          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 3 секції ЖК CRYSTAL RESIDENCE  ведеться цегляна кладка стін на 8 і 9 поверсі та йде армування плити 16 поверху.</p></div>
+          <div class="video__text-wrapper"><img src="img/dash.svg" alt=""><p class="section__text">В 4 секцiї закінчується бетонування вертикальних конструкцій 16 поверху.</p></div>
           <a href="" class="video__details">
           <button class="tab-btn">
           дізнатися більше
@@ -56,7 +56,7 @@
           <img src="img/arrow.png" alt="">
         </a>`;
           yearBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> 2021`;
-          monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> лютий`;
+          monthBtn.innerHTML = `<img src="img/listArrow1.svg" alt=""> січень`;
           monthList.innerHTML = `
           <li><img src="img/listArrow2.svg" alt=""> Лютий</li>
           <li><img src="img/listArrow2.svg" alt=""> Січень</li>`;
@@ -212,10 +212,10 @@
       }
     })
     camera1.addEventListener(`click`, () => {
-      self.changeLiveCamera(`camera1`, `camera2`, `https://www.youtube.com/embed/TeR3lkbioqU?autoplay=1&controls=0`)
+      self.changeLiveCamera(`camera1`, `camera2`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`)
     })
     camera2.addEventListener(`click`, () => {
-      self.changeLiveCamera(`camera2`, `camera1`, `https://www.youtube.com/embed/5hs3BrVTqZg?autoplay=1&controls=0`)
+      self.changeLiveCamera(`camera2`, `camera1`, `https://www.youtube.com/embed/e2fKMfbYN2Q?autoplay=1&controls=0`)
     })
   }
 
