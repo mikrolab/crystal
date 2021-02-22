@@ -22,11 +22,12 @@
 }
 
 .header__wrapper-phone {
-  font-size: 0.77rem;
+  font-size: 1.3rem;
   color: #1A4073;
   font-style: normal;
-  line-height: 1.2rem;
+  line-height: 2.5rem;
   letter-spacing: 0.16rem;
+  font-weight: 700;
 }
 
 .header__wrapper-num {
@@ -151,6 +152,10 @@
   .phoneMobImg{
     width: 45px;
     height: 45px;
+    background: url(../img/phone__mob.svg);
+    span{
+      display: none;
+    }
   }
 }
 
