@@ -11,6 +11,7 @@
   self.openClosePanorama = () => {
     open.addEventListener(`click`, () => {
       document.getElementsByClassName(`panorama__popup`)[0].style.display = `block`;
+      document.getElementsByClassName(`panorama3d`)[0].setAttribute(`src`, `https://3dtour.ua/tours/2020/zhk_crystal_avenue/`);
     })
     close.addEventListener(`click`, () => {
       document.getElementsByClassName(`panorama__popup`)[0].style.display = `none`;

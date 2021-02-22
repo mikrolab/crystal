@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
     rel="stylesheet">
 </head>
 
@@ -102,7 +102,7 @@
               План поверху
             </div>
             <img src="img/compass.svg" alt="" class="compass">
-            <img src="img/floor.png" alt="">
+            <img src="img/floor.png" alt="" loading="lazy">
           </div>
           <div class="layout__wrapper-block second">
             <div class="layout__plan">
@@ -110,8 +110,8 @@
                 План квартири
               </div>
               <div class="layout__apartment-img">
-                <img src="img/apartment-img1.png" alt="">
-                <img src="img/apartment-img2.png" alt="">
+                <img src="img/apartment-img1.png" alt="" loading="lazy">
+                <img src="img/apartment-img2.png" alt="" loading="lazy">
               </div>
               <button class="residence__button" id="plan__btn">записатися на консультацію</button>
             </div>
@@ -157,13 +157,13 @@
       <div class="question__wrapper" data-aos="fade-left" data-aos-once="false" data-aos-anchor-placement="top-bottom"
         data-aos-duration="800">
         <img src="img/businesswoman.jpg" alt="" class="businesswoman-img" data-aos="flip-right" data-aos-once="false"
-          data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+          data-aos-anchor-placement="top-bottom" data-aos-duration="800" loading="lazy">
         <div class="question__info">
           <p class="section__text">
             Поставте свої питання керівнику відділу продажів компанії
             Строй Сіті Кепітал Валерії</p>
           <img src="img/businesswoman__mob.jpg" alt="" class="businesswoman__mob" data-aos="flip-right"
-            data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            data-aos-once="false" data-aos-anchor-placement="top-bottom" data-aos-duration="800" loading="lazy">
           <form class="question__form contact__form">
             <input type="text" name="name" class="residence__input" placeholder="Ваше ім'я" required>
             <input type="text" name="phone" class="residence__input" placeholder="Ваш телефон" required>

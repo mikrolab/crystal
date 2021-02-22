@@ -13,7 +13,7 @@
   const monthBtn = document.getElementById(`selected__month`);
   const monthList = document.getElementById(`month__list`);
   const startYear = document.getElementById(`start__year`);
-  let year = `2021`;
+  let year = `2020`;
   // Events
 
   // Methods
@@ -204,9 +204,11 @@
         document.getElementsByClassName(`contruction__video`)[0].style.top = `35%`;
         document.getElementsByClassName(`contruction__video`)[0].style.height = `44%`;
         self.changeCamera(`camera-btn`, `video-btn`);
+        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`);
       }
       else{
         self.changeCamera(`camera-btn`, `video-btn`);
+        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`);
       }
     })
     camera1.addEventListener(`click`, () => {
