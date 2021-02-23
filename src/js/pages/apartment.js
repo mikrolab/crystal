@@ -71,13 +71,7 @@
   }
 
   const onDocumentReady = () => {
-    const pathName = window.location.pathname
-    const pathIndex = window.location.pathname.lastIndexOf('/') + 1
 
-    pageName = pathName.substring(pathIndex)
-    if((pageName != `plan.html`) && (pageName != `news.html`) && (pageName != `newsItem.html`) && (pageName != `newsItem1.html`) && (pageName != `newsItem2.html`) && (pageName != `newsItem3.html`) && (pageName != `contacts.html`) && (pageName != `promotions.html`)){
-      self.apartment();
-    }
   };
 
   document.addEventListener(`DOMContentLoaded`, onDocumentReady());

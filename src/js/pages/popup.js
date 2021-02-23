@@ -28,7 +28,7 @@
   }
   self.popup = () => {
 
-    if (pageName == `plan.html`) {
+    if (document.getElementsByClassName(`plan__page`).length) {
       planBtn.addEventListener(`click`, () => {
         self.openPopup()
       })
@@ -42,7 +42,7 @@
         self.closeConfirmationForm()
       })
     }
-    if(pageName == ``){
+    if(document.getElementsByClassName(`index__page`).length){
       contactBtn.addEventListener(`click`, () => {
         self.openPopup();
       })
@@ -56,7 +56,7 @@
         self.closeConfirmationForm()
       })
     }
-    if(pageName == `contacts.html`){
+    if(document.getElementsByClassName(`contacts__page`).length){
       contactBtn.addEventListener(`click`, () => {
         self.openPopup();
       })
@@ -71,12 +71,7 @@
   }
 
   const onDocumentReady = () => {
-    const pathName = window.location.pathname
-    const pathIndex = window.location.pathname.lastIndexOf('/') + 1
 
-    pageName = pathName.substring(pathIndex)
-
-    self.popup();
   };
 
   document.addEventListener(`DOMContentLoaded`, onDocumentReady());

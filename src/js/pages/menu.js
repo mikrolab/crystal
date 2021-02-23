@@ -46,8 +46,7 @@
   }
 
   const onDocumentReady = () => {
-    self.menu();
-    self.menuMob();
+
   };
 
   document.addEventListener(`DOMContentLoaded`, onDocumentReady());

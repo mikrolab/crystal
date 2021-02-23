@@ -6,7 +6,6 @@
   const philBtn = document.getElementById(`philosophy`);
   const specBtn = document.getElementById(`specifications`);
   const infrBtn = document.getElementById(`infrastructure`);
-  let pageName = null;
   // Events
 
 
@@ -65,13 +64,7 @@
   }
 
   const onDocumentReady = () => {
-    const pathName = window.location.pathname
-    const pathIndex = window.location.pathname.lastIndexOf('/') + 1
 
-    pageName = pathName.substring(pathIndex)
-    if ((pageName != `plan.html`) && (pageName != `news.html`) && (pageName != `newsItem.html`) && (pageName != `newsItem1.html`) && (pageName != `newsItem2.html`) && (pageName != `newsItem3.html`) && (pageName != `contacts.html`) && (pageName != `promotions.html`)) {
-      self.about();
-    }
   };
 
   document.addEventListener(`DOMContentLoaded`, onDocumentReady());
