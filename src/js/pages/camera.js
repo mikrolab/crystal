@@ -204,15 +204,15 @@
         document.getElementsByClassName(`contruction__video`)[0].style.top = `35%`;
         document.getElementsByClassName(`contruction__video`)[0].style.height = `44%`;
         self.changeCamera(`camera-btn`, `video-btn`);
-        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`);
+        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/FIb9RhvnoNM?autoplay=1&controls=0`);
       }
       else{
         self.changeCamera(`camera-btn`, `video-btn`);
-        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`);
+        document.querySelectorAll(`.videofile.camera-btn`)[0].setAttribute(`src`, `https://www.youtube.com/embed/FIb9RhvnoNM?autoplay=1&controls=0`);
       }
     })
     camera1.addEventListener(`click`, () => {
-      self.changeLiveCamera(`camera1`, `camera2`, `https://www.youtube.com/embed/k7VskPyUIgA?autoplay=1&controls=0`)
+      self.changeLiveCamera(`camera1`, `camera2`, `https://www.youtube.com/embed/FIb9RhvnoNM?autoplay=1&controls=0`)
     })
     camera2.addEventListener(`click`, () => {
       self.changeLiveCamera(`camera2`, `camera1`, `https://www.youtube.com/embed/e2fKMfbYN2Q?autoplay=1&controls=0`)
